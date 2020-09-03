@@ -137,7 +137,7 @@ divide.onclick = function () {
     }
     if (output.innerHTML !== "") {
         str = output.innerHTML.substr(-1);
-        if (str == "*" || str == "+" || str == "-") {
+        if (str == "*" || str == "/" || str == "-" || str == "+") {
             output.innerHTML = output.innerHTML.substr(0, output.innerHTML.length - 1) + "/"
         } else {
             output.innerHTML = output.innerHTML + "/";
@@ -150,7 +150,7 @@ multiply.onclick = function () {
     }
     if (output.innerHTML !== "") {
         str = output.innerHTML.substr(-1);
-        if (str == "/" || str == "+" || str == "-") {
+        if (str == "*" || str == "/" || str == "-" || str == "+") {
             output.innerHTML = output.innerHTML.substr(0, output.innerHTML.length - 1) + "*"
         } else {
             output.innerHTML = output.innerHTML + "*";
@@ -162,9 +162,10 @@ addition.onclick = function () {
     if (isPressed === true) {
         isPressed = false;
     }
+
     if (output.innerHTML !== "") {
         str = output.innerHTML.substr(-1);
-        if (str == "*" || str == "/" || str == "-") {
+        if (str == "*" || str == "/" || str == "-" || str == "+") {
             output.innerHTML = output.innerHTML.substr(0, output.innerHTML.length - 1) + "+"
         } else {
             output.innerHTML = output.innerHTML + "+";
@@ -179,7 +180,7 @@ subtract.onclick = function () {
     }
     if (output.innerHTML !== "") {
         str = output.innerHTML.substr(-1);
-        if (str == "*" || str == "+" || str == "/") {
+        if (str == "*" || str == "/" || str == "-" || str == "+") {
             output.innerHTML = output.innerHTML.substr(0, output.innerHTML.length - 1) + "-"
         } else {
             output.innerHTML = output.innerHTML + "-";
