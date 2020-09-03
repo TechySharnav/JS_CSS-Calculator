@@ -210,6 +210,7 @@ back.onclick = function () {
 clear.onclick = function () {
     output.innerHTML = "";
     result = 0;
+    decCount = 0;
 }
 equal.onclick = function () {
     if (output.innerHTML !== "") {
