@@ -132,6 +132,7 @@ num00.onclick = function () {
 
 /* -------------------------- Operators -------------------------- */
 divide.onclick = function () {
+    decCount = 0;
     if (isPressed === true) {
         isPressed = false;
     }
@@ -145,6 +146,7 @@ divide.onclick = function () {
     } else {}
 }
 multiply.onclick = function () {
+    decCount = 0;
     if (isPressed === true) {
         isPressed = false;
     }
@@ -159,6 +161,7 @@ multiply.onclick = function () {
 }
 
 addition.onclick = function () {
+    decCount = 0;
     if (isPressed === true) {
         isPressed = false;
     }
@@ -175,6 +178,7 @@ addition.onclick = function () {
 }
 
 subtract.onclick = function () {
+    decCount = 0;
     if (isPressed === true) {
         isPressed = false;
     }
@@ -210,7 +214,6 @@ back.onclick = function () {
 clear.onclick = function () {
     output.innerHTML = "";
     result = 0;
-    decCount = 0;
 }
 equal.onclick = function () {
     if (output.innerHTML !== "") {
